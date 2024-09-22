@@ -7,8 +7,11 @@ namespace AreaDoTriangulo
     {
         static void Main(string[] args)
         {
-            double AreaDaBase = double.Parse(Console.ReadLine());
-            double Altura = double.Parse(Console.ReadLine());
+            Console.Write("Informe a área da base: ");
+            double AreaDaBase = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Console.Write("Informe a altura: ");
+            double Altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             double AreaDoTriangulo = (AreaDaBase * Altura) / 2.0;
 
