@@ -1,6 +1,6 @@
 using System;
 
-namespace ExibirData
+namespace ExibirMensagem
 {
     internal class Program
     {
