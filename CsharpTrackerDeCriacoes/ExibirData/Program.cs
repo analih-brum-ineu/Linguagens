@@ -6,8 +6,8 @@ namespace ExibirData
     {
         public static void ExibirData()
         {
-            string Data = DateTime.Now.ToString();
-            Console.WriteLine(Data);
+            string data = DateTime.Now.ToString();
+            Console.WriteLine(data);
         }
         static void Main(string[] args)
         {
