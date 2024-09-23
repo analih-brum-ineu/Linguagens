@@ -19,7 +19,7 @@ namespace JogoFrasesDeLivros
         }
         static void Main(string[] args)
         {
-            string[] Frases =
+            string[] frases =
             {
                 "Quando acordei hoje de manhã, eu sabia quem eu era, mas acho que já mudei muitas vezes desde então.",
                 "Às vezes o mundo não precisa de um outro herói. Às vezes o que ele precisa é de um monstro.",
@@ -28,7 +28,7 @@ namespace JogoFrasesDeLivros
                 "Prefiro o ódio de qualquer pessoa do que a pena."
             };
 
-            string[] Respostas =
+            string[] respostas =
             {
                 "Alice no País das Maravilhas de Lewis Carroll",
                 "Drácula de Bram Stoker",
@@ -37,29 +37,29 @@ namespace JogoFrasesDeLivros
                 "The Outsiders de S. E. Hinton"
             };
 
-            string Sair = "Sim";
-            string Resposta = " ";
+            string sair = "Sim";
+            string resposta = " ";
 
-            int ContadorDeIndices = 0;
+            int contadorDeIndices = 0;
 
-            int[] IndicesParaSorteio = new int[Frases.Length];
+            int[] indicesParaSorteio = new int[frases.Length];
 
-            for (int i = 0; i < Frases.Length; i++)
+            for (int i = 0; i < frases.Length; i++)
             {
-                IndicesParaSorteio[i] = i;
+                indicesParaSorteio[i] = i;
             }
 
-            IndicesParaSorteio = Program.Shuffle(IndicesParaSorteio);
+            indicesParaSorteio = Program.Shuffle(indicesParaSorteio);
 
-            while (Sair != "Não" && ContadorDeIndices < Frases.Length)
+            while (sair != "Não" && contadorDeIndices < frases.Length)
             {
 
-                Console.WriteLine("Frase: {0}", Frases[IndicesParaSorteio[ContadorDeIndices]]);
+                Console.WriteLine("Frase: {0}", frases[indicesParaSorteio[contadorDeIndices]]);
 
                 Console.Write("Resposta: ");
-                Resposta = Console.ReadLine();
+                resposta = Console.ReadLine();
 
-                if (Resposta.ToUpper() != Respostas[IndicesParaSorteio[ContadorDeIndices]].ToUpper())
+                if (resposta.ToUpper() != respostas[indicesParaSorteio[contadorDeIndices]].ToUpper())
                 {
                     Console.WriteLine("Resposta incorreta!");
                 }
@@ -68,10 +68,10 @@ namespace JogoFrasesDeLivros
                     Console.WriteLine("Resposta correta. Parabénx!");
                 }
 
-                ContadorDeIndices++;
+                contadorDeIndices++;
 
                 Console.WriteLine("Deseja jogar novamente? ");
-                Sair = Console.ReadLine();
+                sair = Console.ReadLine();
             }
         }
     }
