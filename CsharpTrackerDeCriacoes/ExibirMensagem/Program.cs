@@ -4,14 +4,14 @@ namespace ExibirMensagem
 {
     internal class Program
     {
-        public static void ExibirMensagem(string Nome)
+        public static void ExibirMensagem(string nome)
         {
-            Console.WriteLine("Bem-vindo(a), {0}!", Nome);
+            Console.WriteLine("Bem-vindo(a), {0}!", nome);
         }
         static void Main(string[] args)
         {
-            string Nome = "Analih Brum Ineu";
-            ExibirMensagem(Nome);
+            string nome = "Analih Brum Ineu";
+            ExibirMensagem(nome);
 
             Console.ReadKey();
         }
