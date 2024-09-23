@@ -4,16 +4,16 @@ namespace CalcularIdade
 {
     internal class Program
     {
-        public static int CalcularIdade(int Ano)
+        public static int CalcularIdade(int ano)
         {
-            int AnoAtual = DateTime.Now.Date.Year;
-            int Idade = AnoAtual - Ano;
-            return Idade;
+            int anoAtual = DateTime.Now.Date.Year;
+            int idade = anoAtual - ano;
+            return idade;
         }
         static void Main(string[] args)
         {
-            int Idade = CalcularIdade(2006);
-            Console.WriteLine(Idade + " anos");
+            int idade = CalcularIdade(2006);
+            Console.WriteLine(idade + " anos");
 
             Console.ReadKey();
         }
