@@ -41,6 +41,7 @@ int main()
 
 		if (codigo == 3) 
 		{
+			std::cin.ignore();
 			lista.sort();
 			for (std::string el : lista) 
 			{
