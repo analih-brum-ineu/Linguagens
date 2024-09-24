@@ -8,5 +8,6 @@ int main()
 	std::wcout.imbue(std::locale(""));
 
 	std::wcout << L"Olá, mundo!" << std::endl;
+	system("PAUSE");
 	return 0;
 }
