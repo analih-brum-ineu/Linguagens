@@ -28,17 +28,21 @@ int main()
 		if (codigo == 2)
 		{
 			std::cout << "Informe a posicao do nome a ser removido: "; std::cin >> posicao;
-			vetor.erase(vetor.begin() + posicao);
+			if (posicao >= 0 && posicao < vetor.size())
+			{
+				vetor.erase(vetor.begin() + posicao);
+				std::cout << "Nome removido com sucesso!" << std::endl;
+			}
+			else { std::cout << "A posicao informada e invalida!" << std::endl; }
 		}
 
 		if (codigo == 3)
 		{
 			sort(vetor.begin(), vetor.end());
-			for (int i = 0; i < vetor.size(); i++) 
+			for (int i = 0; i < vetor.size(); i++)
 			{
-				std::cout << "\t" << i << " | "<< vetor[i] << std::endl;
+				std::cout << "\t" << i << " | " << vetor[i] << std::endl;
 			}
 		}
-
 	} while (codigo != 4);
 }
