@@ -45,7 +45,7 @@ int main()
 			lista.sort();
 			for (std::string el : lista) 
 			{
-				std::cout << el << std::endl;
+				std::cout << "\t" << el << std::endl;
 			}
 		}
 
