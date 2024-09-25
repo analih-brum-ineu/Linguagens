@@ -27,14 +27,12 @@ int main()
 
 		if (codigo == 2)
 		{
-			std::cin.ignore();
 			std::cout << "Informe a posicao do nome a ser removido: "; std::cin >> posicao;
 			vetor.erase(vetor.begin() + posicao);
 		}
 
 		if (codigo == 3)
 		{
-			std::cin.ignore();
 			sort(vetor.begin(), vetor.end());
 			for (int i = 0; i < vetor.size(); i++) 
 			{
