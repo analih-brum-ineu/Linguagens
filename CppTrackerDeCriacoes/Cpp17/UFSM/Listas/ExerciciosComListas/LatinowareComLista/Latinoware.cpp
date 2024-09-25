@@ -32,6 +32,7 @@ int main()
 			if (find(lista.begin(), lista.end(), nome) != lista.end()) 
 			{
 				lista.erase(find(lista.begin(), lista.end(), nome));
+				std::cout << "Nome removido com sucesso!" << std::endl;
 			}
 			else 
 			{
