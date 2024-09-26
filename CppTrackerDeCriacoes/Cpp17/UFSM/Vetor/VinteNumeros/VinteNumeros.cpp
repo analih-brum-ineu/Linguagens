@@ -27,7 +27,7 @@ int main()
 	std::cout << "Informe o numero que procura: "; std::cin >> numeroProcurado;
 	if (find(vetor.begin(), vetor.end(), numeroProcurado) != vetor.end()) 
 	{
-		std::cout << "Numero " << numeroProcurado << " encontrado no array!" << std::endl;
+		std::cout << "Numero " << numeroProcurado << " encontrado no vetor!" << std::endl;
 	}
 	else 
 	{
