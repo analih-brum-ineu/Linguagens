@@ -16,7 +16,7 @@ int main()
 	}
 	
 	std::cout << "" << std::endl;
-	std::cout << "Array: " << std::endl;
+	std::cout << "Vetor: " << std::endl;
 	sort(vetor.begin(), vetor.end());
 	for (int i = 0; i < TAMANHO; i++) {
 		std::cout << '\t' << vetor[i] <<std::endl;
