@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <queue>
 
-#define TAMANHO 5
+#define TAMANHO 20
 
 int main() 
 {
