@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <queue>
 #include <algorithm>
 #include <string>
 
@@ -8,21 +7,21 @@
 
 int main() 
 {
-	std::vector <std::string> vetor;
+	std::vector <std::string> vector;
 	std::string nome, nomeProcurado;
 	int contador = 0;
 
 	for (int i = 0; i < TAMANHO; i++)
 	{
-		std::cout << "Informe o " << i + 1 << ".o nome : "; std::getline(std::cin, nome); vetor.push_back(nome);
+		std::cout << "Informe o " << i + 1 << ".o nome : "; std::getline(std::cin, nome); vector.push_back(nome);
 	}
 
 	std::cout << "" << std::endl;
-	std::cout << "Vetor: " << std::endl;
-	sort(vetor.begin(), vetor.end());
+	std::cout << "Vector: " << std::endl;
+	sort(vector.begin(), vector.end());
 	for (int i = 0; i < TAMANHO; i++) 
 	{
-		std::cout << '\t' << vetor[i] << std::endl;
+		std::cout << '\t' << vector[i] << std::endl;
 	}
 
 	std::cout << "" << std::endl;
@@ -30,9 +29,9 @@ int main()
 	bool encontrado = false;
 	for (int i = 0; i < TAMANHO; i++)
 	{
-		if (vetor[i].find(nomeProcurado) != std::string::npos)
+		if (vector[i].find(nomeProcurado) != std::string::npos)
 		{
-			std::cout << "Nome " << vetor[i] << " encontrado no vetor!" << std::endl;
+			std::cout << "Nome " << vector[i] << " encontrado no vetor!" << std::endl;
 			contador++;
 		}
 	}
