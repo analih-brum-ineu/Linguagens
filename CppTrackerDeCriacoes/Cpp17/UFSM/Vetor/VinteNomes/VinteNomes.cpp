@@ -31,7 +31,7 @@ int main()
 	{
 		if (vector[i].find(nomeProcurado) != std::string::npos)
 		{
-			std::cout << "Nome " << vector[i] << " encontrado no vetor!" << std::endl;
+			std::cout << "Nome " << vector[i] << " encontrado no vector!" << std::endl;
 			contador++;
 		}
 	}
