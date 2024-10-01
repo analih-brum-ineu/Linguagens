@@ -1,33 +1,31 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <queue>
 
 #define TAMANHO 20
 
 int main() 
 {
-	std::vector <int> vetor;
+	std::vector <int> vector;
 	int numero, numeroProcurado;
 
 	for (int i = 0; i < TAMANHO; i++)
 	{
-		std::cout << "Informe o " << i + 1 << ".o numero : "; std::cin >> numero; vetor.push_back(numero);
+		std::cout << "Informe o " << i + 1 << ".o numero : "; std::cin >> numero; vector.push_back(numero);
 	}
 	
 	std::cout << "" << std::endl;
-	std::cout << "Vetor: " << std::endl;
-	sort(vetor.begin(), vetor.end());
-	for (int i = 0; i < TAMANHO; i++) 
-	{
-		std::cout << '\t' << vetor[i] <<std::endl;
+	std::cout << "Vector: " << std::endl;
+	sort(vector.begin(), vector.end());
+	for (int i = 0; i < TAMANHO; i++) {
+		std::cout << '\t' << vector[i] <<std::endl;
 	}
 
 	std::cout << "" << std::endl;
 	std::cout << "Informe o numero que procura: "; std::cin >> numeroProcurado;
-	if (find(vetor.begin(), vetor.end(), numeroProcurado) != vetor.end()) 
+	if (find(vector.begin(), vector.end(), numeroProcurado) != vector.end()) 
 	{
-		std::cout << "Numero " << numeroProcurado << " encontrado no vetor!" << std::endl;
+		std::cout << "Numero " << numeroProcurado << " encontrado no vector!" << std::endl;
 	}
 	else 
 	{
